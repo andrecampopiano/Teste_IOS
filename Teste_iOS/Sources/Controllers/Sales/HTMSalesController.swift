@@ -10,12 +10,12 @@ import UIKit
 
 class HTMSalesController: UITableViewController {
 
-    let cellSale = "cellSales"
+    let cellIdentifieldSale = "cellSales"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellSale)
+        tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,17 +34,13 @@ class HTMSalesController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 10
     }
-
-    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 115
-    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 115
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellSale, for: indexPath) as! HTMSalesCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifieldSale, for: indexPath) as! HTMSalesCell
         
         if indexPath.row % 2 != 0 {
             cell.contentView.backgroundColor = UIColor.white

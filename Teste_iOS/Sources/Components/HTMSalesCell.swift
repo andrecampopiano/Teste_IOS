@@ -10,6 +10,7 @@ import UIKit
 
 class HTMSalesCell: UITableViewCell {
 
+    @IBOutlet weak var viewContainer: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

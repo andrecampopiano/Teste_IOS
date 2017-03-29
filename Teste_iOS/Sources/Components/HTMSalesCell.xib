@@ -15,14 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOP-86-UVh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="115"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como organizar uma festa infantil maravilhosa e gastando pouco" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZB-9u-LdC">
-                                <rect key="frame" x="19" y="25" width="248" height="38"/>
+                                <rect key="frame" x="19" y="30" width="243" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="Jjq-KG-PqY"/>
                                 </constraints>
@@ -31,32 +31,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id 30294080" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRv-US-Shi">
-                                <rect key="frame" x="19" y="73" width="83" height="17.5"/>
+                                <rect key="frame" x="19" y="78" width="83" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/11/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q78-dJ-2OJ">
-                                <rect key="frame" x="112" y="73" width="74" height="17.5"/>
+                                <rect key="frame" x="112" y="78" width="74" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_alert" translatesAutoresizingMaskIntoConstraints="NO" id="uuZ-Qc-RMi">
-                                <rect key="frame" x="287" y="10" width="15" height="15"/>
-                                <color key="backgroundColor" red="0.90588235294117647" green="0.67843137254901964" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_alert" translatesAutoresizingMaskIntoConstraints="NO" id="uuZ-Qc-RMi">
+                                <rect key="frame" x="282" y="10" width="20" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="BvJ-Oy-lP0"/>
-                                    <constraint firstAttribute="width" constant="15" id="plM-nW-vCM"/>
+                                    <constraint firstAttribute="height" constant="20" id="BvJ-Oy-lP0"/>
+                                    <constraint firstAttribute="width" constant="20" id="plM-nW-vCM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-YL-Aht">
-                                <rect key="frame" x="105" y="80" width="4" height="4"/>
+                                <rect key="frame" x="105" y="85" width="4" height="4"/>
                                 <color key="backgroundColor" red="0.28627450980392155" green="0.50980392156862742" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="4" id="fk8-Vc-Nrw"/>
@@ -85,7 +84,7 @@
                             <constraint firstItem="q78-dJ-2OJ" firstAttribute="leading" secondItem="BYe-YL-Aht" secondAttribute="trailing" constant="3" id="U9E-nT-nbg"/>
                             <constraint firstItem="tRv-US-Shi" firstAttribute="leading" secondItem="ZZB-9u-LdC" secondAttribute="leading" id="amL-F9-V77"/>
                             <constraint firstItem="ZZB-9u-LdC" firstAttribute="leading" secondItem="dOP-86-UVh" secondAttribute="leading" constant="18.5" id="g07-wI-qOI"/>
-                            <constraint firstAttribute="trailing" secondItem="uuZ-Qc-RMi" secondAttribute="trailing" constant="18" id="ihs-2f-hmb"/>
+                            <constraint firstAttribute="trailing" secondItem="uuZ-Qc-RMi" secondAttribute="trailing" constant="14" id="ihs-2f-hmb"/>
                             <constraint firstItem="uuZ-Qc-RMi" firstAttribute="top" secondItem="dOP-86-UVh" secondAttribute="top" constant="10" id="k5z-fq-Sin"/>
                             <constraint firstItem="q78-dJ-2OJ" firstAttribute="bottom" secondItem="tRv-US-Shi" secondAttribute="bottom" id="qXm-O2-zcy"/>
                             <constraint firstItem="BYe-YL-Aht" firstAttribute="leading" secondItem="tRv-US-Shi" secondAttribute="trailing" constant="3" id="wQF-Ob-HSt"/>
@@ -99,15 +98,18 @@
                 <constraints>
                     <constraint firstItem="dOP-86-UVh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="B6Z-jS-cW1"/>
                     <constraint firstItem="dOP-86-UVh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RJd-Bu-r8k"/>
-                    <constraint firstAttribute="trailing" secondItem="dOP-86-UVh" secondAttribute="trailing" id="RdX-MJ-yqx"/>
+                    <constraint firstAttribute="trailing" secondItem="dOP-86-UVh" secondAttribute="trailing" constant="4" id="RdX-MJ-yqx"/>
                     <constraint firstItem="dOP-86-UVh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y3g-2g-i9y"/>
                     <constraint firstAttribute="bottom" secondItem="dOP-86-UVh" secondAttribute="bottom" id="YiI-fD-v3D"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="viewContainer" destination="dOP-86-UVh" id="eAn-h3-3bb"/>
+            </connections>
             <point key="canvasLocation" x="32" y="-65"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icon_alert" width="34" height="34"/>
+        <image name="ico_alert" width="94" height="94"/>
     </resources>
 </document>
