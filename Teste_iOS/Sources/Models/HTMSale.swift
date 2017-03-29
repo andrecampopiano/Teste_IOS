@@ -11,8 +11,9 @@ import UIKit
 class HTMSale: NSObject {
     
     var descricao:String!
-    var id:Int!
-    var dateSale:NSDate!
+    var id:NSNumber!
+    var date_sale:String!
     var price:Double!
+    var alert:Bool!
 
 }

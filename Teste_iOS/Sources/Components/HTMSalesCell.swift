@@ -10,7 +10,13 @@ import UIKit
 
 class HTMSalesCell: UITableViewCell {
 
+    @IBOutlet weak var lblDescricao: UILabel!
+    
+    @IBOutlet weak var alertIcon: UIImageView!
+    @IBOutlet weak var lblId: UILabel!
+    @IBOutlet weak var lblDateSale: UILabel!
     @IBOutlet weak var viewContainer: UIView!
+    @IBOutlet weak var lblPrice: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
