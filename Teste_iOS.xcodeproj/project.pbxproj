@@ -15,6 +15,7 @@
 		6EF4B9711E8B3F0F004ECA58 /* HTMSalesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4B9701E8B3F0F004ECA58 /* HTMSalesController.swift */; };
 		6EF4B9731E8B5F0C004ECA58 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4B9721E8B5F0C004ECA58 /* UIViewExtension.swift */; };
 		6EF4B9751E8C49A0004ECA58 /* HTMSalesConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4B9741E8C49A0004ECA58 /* HTMSalesConnect.swift */; };
+		6EF4B97A1E8D0683004ECA58 /* sales.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EF4B9791E8D0683004ECA58 /* sales.json */; };
 		7F80915426FA4ACCEB055BEB /* Pods_Teste_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A681A82B9A0CC4B4C6AA4A /* Pods_Teste_iOS.framework */; };
 		94A9AA971E8BC09C0038EAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AA961E8BC09C0038EAEB /* Assets.xcassets */; };
 		94A9AAA21E8BC8D10038EAEB /* HTMPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAA01E8BC8D10038EAEB /* HTMPostCell.swift */; };
@@ -42,6 +43,7 @@
 		6EF4B9701E8B3F0F004ECA58 /* HTMSalesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMSalesController.swift; sourceTree = "<group>"; };
 		6EF4B9721E8B5F0C004ECA58 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		6EF4B9741E8C49A0004ECA58 /* HTMSalesConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMSalesConnect.swift; sourceTree = "<group>"; };
+		6EF4B9791E8D0683004ECA58 /* sales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sales.json; sourceTree = "<group>"; };
 		94A9AA961E8BC09C0038EAEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A9AAA01E8BC8D10038EAEB /* HTMPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMPostCell.swift; sourceTree = "<group>"; };
 		94A9AAA11E8BC8D10038EAEB /* HTMPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTMPostCell.xib; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		6EF4B9541E8B212A004ECA58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6EF4B9761E8D0631004ECA58 /* JSON */,
 				6EF4B9551E8B212A004ECA58 /* imagens */,
 				6EF4B9571E8B212A004ECA58 /* UserInterface */,
 			);
@@ -235,6 +238,14 @@
 			path = Sales;
 			sourceTree = "<group>";
 		};
+		6EF4B9761E8D0631004ECA58 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				6EF4B9791E8D0683004ECA58 /* sales.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		94A9AA9C1E8BC85B0038EAEB /* Posts */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +347,7 @@
 			files = (
 				6EF4B9671E8B212A004ECA58 /* LaunchScreen.storyboard in Resources */,
 				6EF4B96E1E8B2595004ECA58 /* HTMSalesCell.xib in Resources */,
+				6EF4B97A1E8D0683004ECA58 /* sales.json in Resources */,
 				94A9AAAD1E8BE5DB0038EAEB /* HTMRecentPostsCell.xib in Resources */,
 				94A9AA971E8BC09C0038EAEB /* Assets.xcassets in Resources */,
 				94A9AAA31E8BC8D10038EAEB /* HTMPostCell.xib in Resources */,
