@@ -12,6 +12,8 @@ class HTMSalesController: UITableViewController {
 
     let cellIdentifieldSale = "cellSales"
     
+    var listSale = Array<HTMSale>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +34,7 @@ class HTMSalesController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return self.listSale.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -41,16 +43,24 @@ class HTMSalesController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifieldSale, for: indexPath) as! HTMSalesCell
+        let sale = self.listSale[indexPath.row]
         
-        if indexPath.row % 2 != 0 {
-            cell.contentView.backgroundColor = UIColor.white
-            print(indexPath.row)
-        }
-
+        cell.lblDescricao.text = sale.descricao
+        cell.lblId.text = sale.id.stringValue
+        cell.lblPrice.text = String(format: "R$ %.2f", sale.price)
+        cell.lblDateSale.text = sale.date_sale
+        cell.alertIcon.isHidden = !sale.alert
+        
         return cell
     }
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if indexPath.row % 2 == 0 {
+            cell.contentView.backgroundColor = UIColor.white
+        }
+        
+    }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

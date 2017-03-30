@@ -11,6 +11,6 @@ import UIKit
 class HTMUser: NSObject {
 
     var name:String!
-    var urlProfileImag:String!
+    var urlProfileImage:String!
     
 }

@@ -21,10 +21,20 @@ class HTMDashboardController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HTMSalesConnect.sharedInstance.getListSales { (sales:NSMutableArray) in
-            self.listSale = (sales as NSArray) as! Array<HTMSale>
+        HTMSalesConnect.sharedInstance.getListSales { (sales:Array<HTMSale>) in
+            self.listSale = sales
+            let saleController = HTMSalesController()
+            saleController.listSale = sales
+            
+            if let navController = self.tabBarController?.viewControllers?[1] as? UINavigationController{
+                if let salesController = navController.childViewControllers.first as? HTMSalesController{
+                    salesController.listSale = self.listSale
+                }
+            }
+            
             self.tableView.reloadData()
         }
+        
         
         
         self.tableView.delegate = self

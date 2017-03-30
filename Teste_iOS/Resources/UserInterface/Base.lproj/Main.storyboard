@@ -600,7 +600,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zx0-JF-1ob" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="eQe-7d-6nP"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="91p-j7-15H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="91p-j7-15H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.81568627449999997" green="0.30980392159999998" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
@@ -630,11 +630,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6xN-HD-b7Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="rnG-Iq-XAB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="CZa-Rw-Ghz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="CZa-Rw-Ghz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.28627450980392155" green="0.50980392156862742" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -653,11 +654,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="92P-bm-Ngl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="history" id="EEY-is-74v"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="x4n-xF-3g7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="x4n-xF-3g7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90588235289999997" green="0.67843137249999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>

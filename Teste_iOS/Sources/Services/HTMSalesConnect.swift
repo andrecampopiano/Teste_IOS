@@ -13,7 +13,7 @@ class HTMSalesConnect: NSObject {
     
     static let sharedInstance = HTMSalesConnect()
     
-    func getListSales(completion: @escaping (NSMutableArray)->()){
+    func getListSales(completion: @escaping (Array<HTMSale>)->()){
         FIRDatabase.database().reference().child("sales").observeSingleEvent(of: .value, with: { (snapshot) in
             
             
@@ -31,7 +31,8 @@ class HTMSalesConnect: NSObject {
                 listSales.add(sale)
             }
             
-            completion(listSales)
+            
+            completion((listSales as NSArray) as! Array<HTMSale>)
         
             
         })
