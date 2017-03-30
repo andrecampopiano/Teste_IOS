@@ -8,10 +8,9 @@
 
 import UIKit
 
-class HTMDashboardController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     private var listSale = Array<HTMSale>()
     
@@ -34,8 +33,6 @@ class HTMDashboardController: UIViewController, UITableViewDelegate, UITableView
             
             self.tableView.reloadData()
         }
-        
-        
         
         self.tableView.delegate = self
         self.tableView.dataSource = self

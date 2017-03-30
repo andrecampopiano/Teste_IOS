@@ -10,8 +10,8 @@ import UIKit
 
 private let cellPosts = "cellPosts"
 
-class HTMPostsController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()

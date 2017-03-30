@@ -12,11 +12,16 @@ class HTMSalesController: UITableViewController {
 
     let cellIdentifieldSale = "cellSales"
     
+    @IBOutlet weak var btnMenu: UIBarButtonItem!
     var listSale = Array<HTMSale>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnMenu.target = self.revealViewController()
+        btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    
         tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
     }
 
