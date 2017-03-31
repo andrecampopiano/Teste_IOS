@@ -10,10 +10,10 @@ import UIKit
 
 class HTMSale: NSObject {
     
-    var descricao:String!
-    var id:NSNumber!
-    var date_sale:String!
-    var price:Double!
-    var alert:Bool!
+    var descricao:String?
+    var id:NSNumber?
+    var date_sale:String?
+    var price:NSNumber?
+    var alert:NSNumber?
 
 }

@@ -51,10 +51,10 @@ class HTMSalesController: UITableViewController {
         let sale = self.listSale[indexPath.row]
         
         cell.lblDescricao.text = sale.descricao
-        cell.lblId.text = sale.id.stringValue
-        cell.lblPrice.text = String(format: "R$ %.2f", sale.price)
+        cell.lblId.text = sale.id!.stringValue
+        cell.lblPrice.text = String(format: "R$ %.2f", sale.price!)
         cell.lblDateSale.text = sale.date_sale
-        cell.alertIcon.isHidden = !sale.alert
+        //cell.alertIcon.isHidden = !sale.alert!
         
         return cell
     }

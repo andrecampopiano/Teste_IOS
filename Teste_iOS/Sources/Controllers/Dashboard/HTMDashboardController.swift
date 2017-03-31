@@ -10,20 +10,37 @@ import UIKit
 
 class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var lblSalesValue: UILabel!
     
     private var listSale = Array<HTMSale>()
+    private var listUsers = Array<HTMUser>()
     
     private let cellIdentifieldRecentPosts = "cellRecentPosts"
     let cellIdentifieldSale = "cellSales"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setContent()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
-        HTMSalesConnect.sharedInstance.getListSales { (sales:Array<HTMSale>) in
+        self.tableView.register(UINib(nibName: "HTMRecentPostsCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldRecentPosts)
+        self.tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
+        
+    }
+    
+    func setContent(){
+        self.activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        HTMSalesService.sharedInstance.getListSales { (sales:Array<HTMSale>,saldo:Double) in
+            self.lblSalesValue.text = String(format: "R$%.2f", saldo)
             self.listSale = sales
-            let saleController = HTMSalesController()
-            saleController.listSale = sales
+            
+            HTMPostsService.sharedInstance.recoveryPostsUsers { (users:[HTMUser]) in
+                self.listUsers = users
+            }
             
             if let navController = self.tabBarController?.viewControllers?[1] as? UINavigationController{
                 if let salesController = navController.childViewControllers.first as? HTMSalesController{
@@ -31,15 +48,13 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
                 }
             }
             
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
+                UIApplication.shared.endIgnoringInteractionEvents()
+            }
         }
-        
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        
-        self.tableView.register(UINib(nibName: "HTMRecentPostsCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldRecentPosts)
-        self.tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,29 +83,33 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
                 let sale:HTMSale = listSale[indexPath.row]
                 
                 cellSale.lblDescricao.text = sale.descricao
-                cellSale.lblId.text = sale.id.stringValue
-                cellSale.lblPrice.text = String(format: "R$ %.2f", sale.price)
+                cellSale.lblId.text = sale.id!.stringValue
+                cellSale.lblPrice.text = String(format: "R$ %.2f", sale.price!)
                 cellSale.lblDateSale.text = sale.date_sale
-                cellSale.alertIcon.isHidden = !sale.alert
+                //cellSale.alertIcon.isHidden = !sale.alert!
                 
                 cellSale.contentView.backgroundColor = UIColor(red:0.29, green:0.51, blue:0.77, alpha:1.0)
+                cell = cellSale
+            }
+        }
+        
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if !self.listSale.isEmpty {
+            if indexPath.section == 1{
+                let cellSale = cell as! HTMSalesCell
                 if indexPath.row % 2 == 0 {
                     cellSale.viewContainer.backgroundColor = UIColor.white
                 }else {
                     cellSale.viewContainer.backgroundColor = UIColor(white:0.96, alpha:1.0)
                 }
-                cell = cellSale
             }
-            
-            
         }
         
-        
-        
-        
-        return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var heightRow:CGFloat = 201
         

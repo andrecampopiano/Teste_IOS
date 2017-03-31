@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="75" height="135"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-SM-VvZ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-SM-VvZ" customClass="HTMCustomImageView" customModule="Teste_iOS" customModuleProvider="target">
                         <rect key="frame" x="0.5" y="12.5" width="74" height="74.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="74.400000000000006" id="LyL-qZ-6fE"/>

@@ -8,6 +8,11 @@
 
 import UIKit
 
-class HTMPost: NSObject {
+class HTMMessage: NSObject {
 
+    var text:String?
+    var date:NSDate?
+    
+    var user:HTMUser?
+    
 }

@@ -32,9 +32,14 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-wU-wbZ">
+                                <rect key="frame" x="197" y="326" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ea1-wU-wbZ" firstAttribute="centerX" secondItem="Z6e-16-ViP" secondAttribute="centerX" id="6AQ-Pj-4ld"/>
+                            <constraint firstItem="ea1-wU-wbZ" firstAttribute="centerY" secondItem="Z6e-16-ViP" secondAttribute="centerY" id="EZp-6z-Aze"/>
                             <constraint firstItem="orB-NT-cRL" firstAttribute="top" secondItem="Mst-93-Fg9" secondAttribute="bottom" id="SGZ-Fp-AIF"/>
                             <constraint firstItem="G0y-E6-mYq" firstAttribute="top" secondItem="orB-NT-cRL" secondAttribute="bottom" id="gGD-KJ-oDe"/>
                             <constraint firstAttribute="trailing" secondItem="orB-NT-cRL" secondAttribute="trailing" constant="18.5" id="uSf-Iz-37c"/>
@@ -47,6 +52,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="ea1-wU-wbZ" id="78E-Sl-yzu"/>
                         <outlet property="btnMenu" destination="bts-GP-ejC" id="WmP-tU-5fg"/>
                         <outlet property="collectionView" destination="orB-NT-cRL" id="MUa-7F-sfK"/>
                     </connections>
@@ -141,13 +147,18 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-nm-zHS">
-                                <rect key="frame" x="0.0" y="100" width="414" height="572"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jIM-TV-G1H">
+                                <rect key="frame" x="197" y="326" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Uad-nm-zHS" firstAttribute="leading" secondItem="C38-u0-Ggg" secondAttribute="leading" id="0PD-QE-Yxb"/>
+                            <constraint firstItem="jIM-TV-G1H" firstAttribute="centerX" secondItem="C38-u0-Ggg" secondAttribute="centerX" id="0VM-Gh-69k"/>
+                            <constraint firstItem="jIM-TV-G1H" firstAttribute="centerY" secondItem="C38-u0-Ggg" secondAttribute="centerY" id="O9K-mA-NfQ"/>
                             <constraint firstItem="Uad-nm-zHS" firstAttribute="top" secondItem="JEr-uy-2RT" secondAttribute="bottom" id="YWp-5b-XO2"/>
                             <constraint firstAttribute="trailing" secondItem="JEr-uy-2RT" secondAttribute="trailing" id="fMZ-OZ-Ybc"/>
                             <constraint firstItem="JEr-uy-2RT" firstAttribute="leading" secondItem="C38-u0-Ggg" secondAttribute="leading" id="gTx-xq-pjY"/>
@@ -162,7 +173,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="jIM-TV-G1H" id="tpq-2E-T2u"/>
                         <outlet property="btnMenu" destination="5mn-2L-elj" id="QxD-e6-NdK"/>
+                        <outlet property="lblSalesValue" destination="qfQ-eZ-NRn" id="Cze-cg-5C7"/>
                         <outlet property="tableView" destination="Uad-nm-zHS" id="UYy-0h-7Ng"/>
                     </connections>
                 </viewController>
@@ -572,7 +585,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRv-1E-Ch7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2059" y="-1035"/>
+            <point key="canvasLocation" x="-1275" y="-1035"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="5ng-tK-F3u">
@@ -594,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clW-Bj-rXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2383" y="-285"/>
+            <point key="canvasLocation" x="-2329" y="-1035"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CZ2-hr-a6m">
@@ -716,6 +729,6 @@
         <image name="img_profile" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="snZ-KA-YlO"/>
+        <segue reference="VDa-0b-fYu"/>
     </inferredMetricsTieBreakers>
 </document>

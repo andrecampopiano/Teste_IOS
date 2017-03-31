@@ -10,7 +10,7 @@ import UIKit
 
 class HTMPostCell: UICollectionViewCell {
 
-    @IBOutlet weak var imageUser: UIImageView!
+    @IBOutlet weak var imageUser: HTMCustomImageView!
     
     @IBOutlet weak var lblUserName: UILabel!
     
