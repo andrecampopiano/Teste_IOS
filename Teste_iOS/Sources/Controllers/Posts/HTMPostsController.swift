@@ -8,17 +8,19 @@
 
 import UIKit
 
-private let cellPosts = "cellPosts"
+
 
 class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var lblNumberPosts: UILabel!
     var listUsers = [HTMUser]()
+    private let cellPosts = "cellPosts"
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.lblNumberPosts.text = "+20"
         self.automaticallyAdjustsScrollViewInsets = false
         self.collectionView.register(UINib(nibName: "HTMPostCell", bundle: nil), forCellWithReuseIdentifier: cellPosts)
         

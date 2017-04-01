@@ -50,11 +50,28 @@
                         <barButtonItem key="leftBarButtonItem" image="ic_menu_black_24dp" id="bts-GP-ejC">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="9z2-lE-zZj">
+                            <view key="customView" contentMode="scaleToFill" id="Lxg-yl-F0v">
+                                <rect key="frame" x="354" y="5" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSg-NX-cKS">
+                                        <rect key="frame" x="-1" y="6" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.37254901960784315" green="0.28627450980392155" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="ea1-wU-wbZ" id="78E-Sl-yzu"/>
                         <outlet property="btnMenu" destination="bts-GP-ejC" id="WmP-tU-5fg"/>
                         <outlet property="collectionView" destination="orB-NT-cRL" id="MUa-7F-sfK"/>
+                        <outlet property="lblNumberPosts" destination="lSg-NX-cKS" id="kqi-3D-nio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAY-ge-2Gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
