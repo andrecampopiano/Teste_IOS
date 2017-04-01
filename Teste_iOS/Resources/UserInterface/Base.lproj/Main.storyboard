@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="G0y-E6-mYq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z6e-16-ViP">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="orB-NT-cRL">
@@ -33,7 +33,7 @@
                                 <cells/>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-wU-wbZ">
-                                <rect key="frame" x="197" y="326" width="20" height="20"/>
+                                <rect key="frame" x="197" y="301.66666666666669" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,9 +66,13 @@
             <objects>
                 <tableViewController title="Vendas" id="5kQ-Y8-ztK" customClass="HTMSalesController" customModule="Teste_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8e6-H3-CQI">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="zC5-t6-h76">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <connections>
                             <outlet property="dataSource" destination="5kQ-Y8-ztK" id="bSE-CE-JgZ"/>
                             <outlet property="delegate" destination="5kQ-Y8-ztK" id="xKV-ch-Qyw"/>
@@ -80,6 +84,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="zC5-t6-h76" id="zXK-Pn-oKB"/>
                         <outlet property="btnMenu" destination="bh7-ay-FPq" id="2yd-vC-8xp"/>
                     </connections>
                 </tableViewController>
@@ -96,7 +101,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lih-zr-c6G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C38-u0-Ggg">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEr-uy-2RT">
@@ -111,8 +116,8 @@
                                                 <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$2.152,23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfQ-eZ-NRn">
-                                                <rect key="frame" x="0.0" y="17.333333333333332" width="196.66666666666666" height="44"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfQ-eZ-NRn">
+                                                <rect key="frame" x="0.0" y="17.333333333333336" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="38"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -151,7 +156,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jIM-TV-G1H">
-                                <rect key="frame" x="197" y="326" width="20" height="20"/>
+                                <rect key="frame" x="197" y="301.66666666666669" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,7 +206,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-jx-bD1">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-jx-bD1">
                                                     <rect key="frame" x="9" y="0.0" width="396" height="197"/>
                                                 </imageView>
                                                 <visualEffectView opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-bb-aGr">
@@ -212,19 +217,19 @@
                                                     </view>
                                                     <blurEffect style="dark"/>
                                                 </visualEffectView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANDRÉ LC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzd-Hq-P4x">
-                                                    <rect key="frame" x="20" y="145" width="374" height="27.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzd-Hq-P4x">
+                                                    <rect key="frame" x="20" y="145" width="374" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="andre.campopiano@icloud.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edO-UT-KkR">
-                                                    <rect key="frame" x="20" y="172.66666666666663" width="374" height="17.333333333333343"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edO-UT-KkR">
+                                                    <rect key="frame" x="20" y="145" width="374" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                     <color key="textColor" red="0.81568627450980391" green="0.30980392156862746" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile" translatesAutoresizingMaskIntoConstraints="NO" id="pRP-Bl-Hig">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRP-Bl-Hig">
                                                     <rect key="frame" x="20" y="30" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="gPw-YF-wVc"/>
@@ -374,7 +379,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiT-HM-ARf">
                                                     <rect key="frame" x="365" y="15.333333333333336" width="40" height="25"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLJ-ZU-pWJ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLJ-ZU-pWJ">
                                                             <rect key="frame" x="-5" y="3.3333333333333339" width="50" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="I0F-iA-XZK"/>
@@ -427,7 +432,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTx-ji-3Na">
                                                     <rect key="frame" x="365" y="15.666666666666664" width="40" height="25"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-Bq-xhc">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-Bq-xhc">
                                                             <rect key="frame" x="-5" y="3.3333333333333339" width="50" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="Fu0-gM-G1M"/>
@@ -484,7 +489,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-fS-MnQ">
                                                     <rect key="frame" x="365" y="15.666666666666664" width="40" height="25"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-st-Ra9">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-st-Ra9">
                                                             <rect key="frame" x="-5" y="3.3333333333333339" width="50" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="SIF-Pt-bW2"/>
@@ -582,6 +587,15 @@
                         </connections>
                     </tableView>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="imageProfile" destination="pRP-Bl-Hig" id="jwL-0Q-2Jg"/>
+                        <outlet property="imgBackgroudProfile" destination="Xyq-jx-bD1" id="etF-8p-lwR"/>
+                        <outlet property="lblEmail" destination="edO-UT-KkR" id="lnS-OX-whW"/>
+                        <outlet property="lblName" destination="lzd-Hq-P4x" id="gGW-Hg-CET"/>
+                        <outlet property="lblNumberAffiliates" destination="gLJ-ZU-pWJ" id="Iea-MH-adC"/>
+                        <outlet property="lblNumberMessages" destination="C3e-Bq-xhc" id="s65-R9-xAB"/>
+                        <outlet property="lblNumberNotifications" destination="f9G-st-Ra9" id="Jr2-qG-VTZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRv-1E-Ch7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -612,17 +626,17 @@
         <!--Tab Bar Controller-->
         <scene sceneID="CZ2-hr-a6m">
             <objects>
-                <tabBarController id="Gue-u1-SLI" sceneMemberID="viewController">
+                <tabBarController id="Gue-u1-SLI" customClass="HTMTabBarController" customModule="Teste_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ixq-Np-wKo">
                         <barButtonItem key="leftBarButtonItem" image="ic_menu_black_24dp" style="plain" id="5TC-FY-OLS">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="fc3-ur-N0h">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="fc3-ur-N0h" customClass="HTMTabBar" customModule="Teste_iOS" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.90588235289999997" green="0.67843137249999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.51114759939999999" blue="0.030357851969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
@@ -640,7 +654,7 @@
         <scene sceneID="E6K-SO-BgV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zx0-JF-1ob" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="eQe-7d-6nP"/>
+                    <tabBarItem key="tabBarItem" title="" image="ico_mensagem" id="eQe-7d-6nP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="91p-j7-15H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -670,7 +684,7 @@
         <scene sceneID="vE2-yN-8MH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6xN-HD-b7Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="rnG-Iq-XAB"/>
+                    <tabBarItem key="tabBarItem" title="" image="ico_minhas_vendas" id="rnG-Iq-XAB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="CZa-Rw-Ghz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -694,7 +708,7 @@
         <scene sceneID="4jC-GL-KPz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="92P-bm-Ngl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="EEY-is-74v"/>
+                    <tabBarItem key="tabBarItem" image="ico_notificacoes" id="EEY-is-74v"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="x4n-xF-3g7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -720,15 +734,17 @@
         <image name="ico_afiliados" width="178" height="178"/>
         <image name="ico_dashboard" width="178" height="178"/>
         <image name="ico_lupa" width="156" height="156"/>
+        <image name="ico_mensagem" width="50" height="50"/>
         <image name="ico_mensagem-1" width="178" height="178"/>
         <image name="ico_meus_produtos" width="178" height="178"/>
         <image name="ico_minha_conta" width="178" height="178"/>
+        <image name="ico_minhas_vendas" width="50" height="50"/>
         <image name="ico_minhas_vendas-1" width="178" height="178"/>
+        <image name="ico_notificacoes" width="50" height="50"/>
         <image name="ico_notificacoes-1" width="178" height="178"/>
         <image name="ico_sobre_o_app" width="178" height="178"/>
-        <image name="img_profile" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VDa-0b-fYu"/>
+        <segue reference="y3v-jh-T41"/>
     </inferredMetricsTieBreakers>
 </document>

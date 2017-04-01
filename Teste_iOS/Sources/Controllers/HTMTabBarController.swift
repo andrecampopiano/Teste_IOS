@@ -13,7 +13,7 @@ class HTMTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTabBarSeparators()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +21,15 @@ class HTMTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupTabBarSeparators() {
+        let itemWidth = floor(self.tabBar.frame.size.width / CGFloat(self.tabBar.items!.count))
+        let separatorWidth: CGFloat = 0.5
+        for i in 0...(self.tabBar.items!.count - 1) {
+            let heightSeparator = self.tabBar.frame.size.height / 2
+            
+            let separator = UIView(frame: CGRect(x: itemWidth * CGFloat(i + 1) - CGFloat(separatorWidth / 2), y: heightSeparator / 2 , width: CGFloat(separatorWidth), height: heightSeparator))
+            separator.backgroundColor = UIColor.black
+            self.tabBar.addSubview(separator)
+        }
     }
-    */
-
 }

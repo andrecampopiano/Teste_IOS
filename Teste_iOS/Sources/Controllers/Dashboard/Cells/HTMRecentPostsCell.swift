@@ -9,7 +9,10 @@
 import UIKit
 
 class HTMRecentPostsCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
+    var listUsers = [HTMUser]()
+    
+    @IBOutlet weak var lblNumberMessages: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let cellPosts = "cellPosts"
@@ -19,20 +22,26 @@ class HTMRecentPostsCell: UITableViewCell, UICollectionViewDelegate, UICollectio
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "HTMPostCell", bundle: nil), forCellWithReuseIdentifier: cellPosts)
-        
+        self.lblNumberMessages.text = "+15"
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return self.listUsers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        return setHtmPostCell(indexPath: indexPath)
+    }
+    
+    func setHtmPostCell(indexPath:IndexPath)->HTMPostCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellPosts, for: indexPath) as! HTMPostCell
-        
-        cell.lblUserName.text = "Andre Luis Campopiano"
-        cell.imageUser.image = #imageLiteral(resourceName: "img_profile")
-        
+        let user = self.listUsers[indexPath.row]
+        cell.lblUserName.text = user.name
+        if user.urlProfileImage != "" {
+            cell.imageUser.loadImageUsingUrlString(user.urlProfileImage)
+        }else {
+            cell.imageUser.setImageForName(string: user.name, backgroundColor: nil, circular: true, textAttributes: [NSFontAttributeName : UIFont(name:"HelveticaNeue-Bold", size: 45)!, NSForegroundColorAttributeName: UIColor.white])
+        }
         return cell
     }
     

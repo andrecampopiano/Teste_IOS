@@ -10,12 +10,10 @@ import UIKit
 
 class HTMTabBar: UITabBar {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        let sizeThatFits = super.sizeThatFits(size)
+        
+        return CGSize(width: sizeThatFits.width, height: 68)
+    }
 }

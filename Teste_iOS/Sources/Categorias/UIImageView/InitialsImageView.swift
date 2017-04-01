@@ -1,6 +1,6 @@
 //
 //  InitialsImageView.swift
-//  
+//
 //
 //  Created by Tom Bachant on 1/28/17.
 //
@@ -100,24 +100,24 @@ private func initialsFromString(string: String) -> String {
             displayString.append(firstWord.substring(with: firstLetterRange).uppercased())
         }
         
-        /*
-        if words.count >= 2 {
-            var lastWord: String = words.last!
-            
-            while lastWord.characters.count == 0 && words.count >= 2 {
-                words.removeLast()
-                lastWord = words.last!
-            }
-            
-            if words.count > 1 {
-                // Get character range to handle emoji (emojis consist of 2 characters in sequence)
-                let range: Range<String.Index> = lastWord.startIndex..<lastWord.index(lastWord.startIndex, offsetBy: 1)
-                let lastLetterRange: Range = lastWord.rangeOfComposedCharacterSequences(for: range)
-                
-                displayString.append(lastWord.substring(with: lastLetterRange).uppercased())
-            }
-        }
- */
+        /* Utilizando para pegar a primeira letra do segundo nome,comentado para seguir o padrao do layout proposto na prova
+         if words.count >= 2 {
+         var lastWord: String = words.last!
+         
+         while lastWord.characters.count == 0 && words.count >= 2 {
+         words.removeLast()
+         lastWord = words.last!
+         }
+         
+         if words.count > 1 {
+         // Get character range to handle emoji (emojis consist of 2 characters in sequence)
+         let range: Range<String.Index> = lastWord.startIndex..<lastWord.index(lastWord.startIndex, offsetBy: 1)
+         let lastLetterRange: Range = lastWord.rangeOfComposedCharacterSequences(for: range)
+         
+         displayString.append(lastWord.substring(with: lastLetterRange).uppercased())
+         }
+         }
+         */
     }
     
     return displayString
@@ -128,11 +128,27 @@ private func randomColorComponent() -> Int {
     
     return kColorMinComponent + Int(arc4random_uniform(UInt32(limit)))
 }
+private func colorPalette()->UIColor{
+    
+    let laranja = UIColor(red:0.91, green:0.68, blue:0.27, alpha:1.0)
+    let vermelho = UIColor(red:0.82, green:0.31, blue:0.16, alpha:1.0)
+    let roxo = UIColor(red:0.37, green:0.29, blue:0.55, alpha:1.0)
+    let verde = UIColor(red:0.64, green:0.78, blue:0.29, alpha:1.0)
+    let vermelho_claro = UIColor(red:0.81, green:0.26, blue:0.32, alpha:1.0)
+    let azul = UIColor(red:0.29, green:0.51, blue:0.77, alpha:1.0)
+    
+    let arrayColor = [laranja,vermelho,roxo,verde,vermelho_claro,azul]
+    let random = Int(arc4random_uniform(6))
+    return arrayColor[random]
+    
+}
 
 private func randomColor() -> UIColor {
-    let red = CGFloat(randomColorComponent()) / 255.0
-    let green = CGFloat(randomColorComponent()) / 255.0
-    let blue = CGFloat(randomColorComponent()) / 255.0
+    //Alterado para usar somente as cores sugeridas na palheta da prova
+    //let red = CGFloat(randomColorComponent()) / 255.0
+    //let green = CGFloat(randomColorComponent()) / 255.0
+    //let blue = CGFloat(randomColorComponent()) / 255.0
+    //return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     
-    return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    return colorPalette()
 }

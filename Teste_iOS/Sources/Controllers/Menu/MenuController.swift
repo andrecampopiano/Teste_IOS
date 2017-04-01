@@ -10,11 +10,26 @@ import Foundation
 
 class MenuController : UITableViewController {
     
+    @IBOutlet weak var imgBackgroudProfile: UIImageView!
+    @IBOutlet weak var imageProfile: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
+    @IBOutlet weak var lblNumberAffiliates: UILabel!
+    @IBOutlet weak var lblNumberMessages: UILabel!
+    @IBOutlet weak var lblNumberNotifications: UILabel!
+    
     let segueDashboard = "segueDashboard"
     let segueVendas = "segueVendas"
     let segueMensagens = "segueMensagens"
+    
     override func viewDidLoad() {
-        
+        self.imageProfile.image = #imageLiteral(resourceName: "img_profile")
+        self.imgBackgroudProfile.image = #imageLiteral(resourceName: "img_profile")
+        self.lblName.text = "André LC"
+        self.lblEmail.text = "andre.campopiano@icloud.com"
+        self.lblNumberAffiliates.text = "255"
+        self.lblNumberMessages.text = "+100"
+        self.lblNumberNotifications.text = "32"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

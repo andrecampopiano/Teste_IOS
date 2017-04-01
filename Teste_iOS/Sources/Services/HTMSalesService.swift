@@ -13,7 +13,7 @@ class HTMSalesService: NSObject {
     
     static let sharedInstance = HTMSalesService()
     
-    func getListSales(completion: @escaping ([HTMSale], Double)->()){
+    func recoveryListSales(completion: @escaping ([HTMSale], Double)->()){
         var listSales =  [HTMSale]()
         var somaVendas:Double = 0
         FIRDatabase.database().reference().child("sales").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -29,4 +29,15 @@ class HTMSalesService: NSObject {
             completion(listSales, somaVendas)
         })
     }
+    
+    func recoveryUsersAndSales(completion: @escaping ([HTMSale], [HTMUser], Double)->()){
+        self.recoveryListSales { (listSale, saldo) in
+            HTMPostsService.sharedInstance.recoveryPostsUsers(completion: { (listUser) in
+                completion(listSale,listUser,saldo)
+            })
+        }
+    }
+    
+    
+    
 }

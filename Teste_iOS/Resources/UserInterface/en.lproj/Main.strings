@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Mensagens"; ObjectID = "2dE-vx-1tY"; */
+"2dE-vx-1tY.text" = "Posts";
+
+/* Class = "UITableViewController"; title = "Vendas"; ObjectID = "5kQ-Y8-ztK"; */
+"5kQ-Y8-ztK.title" = "Sales";
+
+/* Class = "UILabel"; text = "Minha conta"; ObjectID = "DBO-zk-Cdg"; */
+"DBO-zk-Cdg.text" = "My Account";
+
+/* Class = "UILabel"; text = "Seu saldo atual é de:"; ObjectID = "DeL-H4-Zh2"; */
+"DeL-H4-Zh2.text" = "Your current balance is:";
+
+/* Class = "UILabel"; text = "Sobre o App"; ObjectID = "EKt-Mx-Lar"; */
+"EKt-Mx-Lar.text" = "About App";
+
+/* Class = "UINavigationItem"; title = "Dashboard"; ObjectID = "HIQ-bx-p3J"; */
+"HIQ-bx-p3J.title" = "Dashboard";
+
+/* Class = "UILabel"; text = "Notificações"; ObjectID = "K4Y-b5-Haz"; */
+"K4Y-b5-Haz.text" = "Notifications";
+
+/* Class = "UILabel"; text = "Minhas Vendas"; ObjectID = "ORq-yO-Tgw"; */
+"ORq-yO-Tgw.text" = "My Sales";
+
+/* Class = "UILabel"; text = "Afiliados"; ObjectID = "Rek-RL-ahh"; */
+"Rek-RL-ahh.text" = "Affiliates";
+
+/* Class = "UILabel"; text = "Meus Produtos"; ObjectID = "Wfs-LB-mu7"; */
+"Wfs-LB-mu7.text" = "My Products";
+
+/* Class = "UINavigationItem"; title = "Mensagens"; ObjectID = "Zz4-a4-gxI"; */
+"Zz4-a4-gxI.title" = "Posts";
+
+/* Class = "UIViewController"; title = "Dashboard"; ObjectID = "aBX-yc-J1e"; */
+"aBX-yc-J1e.title" = "Dashboard";
+
+/* Class = "UINavigationItem"; title = "Minhas Vendas"; ObjectID = "abK-9c-qw0"; */
+"abK-9c-qw0.title" = "My Sales";
+
+/* Class = "UILabel"; text = "Dashboard"; ObjectID = "cHc-bN-1MP"; */
+"cHc-bN-1MP.text" = "Dashboard";
