@@ -71,7 +71,7 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
         if !self.listSale.isEmpty {
             if indexPath.section == 1{
                 let cellSale = cell as! HTMSalesCell
-                if indexPath.row % 2 == 0 { cellSale.viewContainer.backgroundColor = UIColor.white }
+                if indexPath.row % 2 != 0 { cellSale.viewContainer.backgroundColor = UIColor.white }
                 else { cellSale.viewContainer.backgroundColor = UIColor(white:0.96, alpha:1.0) }
             }
         }

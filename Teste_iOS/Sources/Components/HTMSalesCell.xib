@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q78-dJ-2OJ">
-                                <rect key="frame" x="29" y="78" width="0.0" height="0.0"/>
+                                <rect key="frame" x="39" y="78" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-YL-Aht">
-                                <rect key="frame" x="22" y="76.5" width="4" height="4"/>
+                                <rect key="frame" x="27" y="76.5" width="4" height="4"/>
                                 <color key="backgroundColor" red="0.28627450980392155" green="0.50980392156862742" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="4" id="fk8-Vc-Nrw"/>
@@ -83,13 +83,13 @@
                             <constraint firstItem="q78-dJ-2OJ" firstAttribute="top" secondItem="tRv-US-Shi" secondAttribute="top" id="Mc5-yu-wST"/>
                             <constraint firstItem="tRv-US-Shi" firstAttribute="top" secondItem="ZZB-9u-LdC" secondAttribute="bottom" constant="10" id="Rul-Q5-mfV"/>
                             <constraint firstAttribute="height" constant="115" id="Szj-HP-v1G"/>
-                            <constraint firstItem="q78-dJ-2OJ" firstAttribute="leading" secondItem="BYe-YL-Aht" secondAttribute="trailing" constant="3" id="U9E-nT-nbg"/>
+                            <constraint firstItem="q78-dJ-2OJ" firstAttribute="leading" secondItem="BYe-YL-Aht" secondAttribute="trailing" constant="8" id="U9E-nT-nbg"/>
                             <constraint firstItem="tRv-US-Shi" firstAttribute="leading" secondItem="ZZB-9u-LdC" secondAttribute="leading" id="amL-F9-V77"/>
                             <constraint firstItem="ZZB-9u-LdC" firstAttribute="leading" secondItem="dOP-86-UVh" secondAttribute="leading" constant="18.5" id="g07-wI-qOI"/>
                             <constraint firstAttribute="trailing" secondItem="uuZ-Qc-RMi" secondAttribute="trailing" constant="14" id="ihs-2f-hmb"/>
                             <constraint firstItem="uuZ-Qc-RMi" firstAttribute="top" secondItem="dOP-86-UVh" secondAttribute="top" constant="10" id="k5z-fq-Sin"/>
                             <constraint firstItem="q78-dJ-2OJ" firstAttribute="bottom" secondItem="tRv-US-Shi" secondAttribute="bottom" id="qXm-O2-zcy"/>
-                            <constraint firstItem="BYe-YL-Aht" firstAttribute="leading" secondItem="tRv-US-Shi" secondAttribute="trailing" constant="3" id="wQF-Ob-HSt"/>
+                            <constraint firstItem="BYe-YL-Aht" firstAttribute="leading" secondItem="tRv-US-Shi" secondAttribute="trailing" constant="8" id="wQF-Ob-HSt"/>
                             <constraint firstItem="BYe-YL-Aht" firstAttribute="centerY" secondItem="tRv-US-Shi" secondAttribute="centerY" id="xrx-fL-HeN"/>
                             <constraint firstItem="HAY-rc-cL8" firstAttribute="trailing" secondItem="uuZ-Qc-RMi" secondAttribute="trailing" id="zfR-7v-Yi0"/>
                         </constraints>
