@@ -32,6 +32,8 @@ class HTMSalesController: UITableViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 UIApplication.shared.endIgnoringInteractionEvents()
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
             }
         }
     }
