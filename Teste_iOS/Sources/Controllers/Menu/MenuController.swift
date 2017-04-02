@@ -21,11 +21,12 @@ class MenuController : UITableViewController {
     let segueDashboard = "segueDashboard"
     let segueVendas = "segueVendas"
     let segueMensagens = "segueMensagens"
+    let segueAccount = "segueAccount"
     
     override func viewDidLoad() {
         self.imageProfile.image = #imageLiteral(resourceName: "img_profile")
         self.imgBackgroudProfile.image = #imageLiteral(resourceName: "img_profile")
-        self.lblName.text = "André LC"
+        self.lblName.text = "JAMES JB"
         self.lblEmail.text = "andre.campopiano@icloud.com"
         self.lblNumberAffiliates.text = "255"
         self.lblNumberMessages.text = "+100"
@@ -46,5 +47,4 @@ class MenuController : UITableViewController {
             vc.selectedIndex = 2
         }
     }
-   
 }

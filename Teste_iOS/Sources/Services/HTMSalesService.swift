@@ -24,6 +24,7 @@ class HTMSalesService: NSObject {
                 if let valor = sale.price {
                     somaVendas += Double(valor)
                 }
+                listSales.sort { Int($0.alert!) > Int($1.alert!) }
                 listSales.append(sale)
             }
             completion(listSales, somaVendas)

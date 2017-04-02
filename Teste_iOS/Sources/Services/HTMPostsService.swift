@@ -20,6 +20,7 @@ class HTMPostsService: NSObject {
                 user.setValuesForKeys(item.value as! [String : AnyObject])
                 listUsers.append(user)
             }
+            listUsers.sort { $0.name < $1.name }
             completion(listUsers)
         })
     }
