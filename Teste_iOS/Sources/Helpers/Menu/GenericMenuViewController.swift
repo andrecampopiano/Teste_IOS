@@ -14,11 +14,15 @@ class GenericMenuViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBtnMenu()
+        
+    }
+    
+    func setBtnMenu(){
         btnMenu.target = self.revealViewController()
         btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-      
     }
-        
+    
     
 }

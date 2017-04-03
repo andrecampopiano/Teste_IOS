@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGm-aa-h0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WGm-aa-h0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -204,14 +204,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nS-37-LAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="712" y="-1035"/>
-        </scene>
-        <!--MyAccount-->
-        <scene sceneID="FL1-l5-nfO">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0lL-vS-XJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewControllerPlaceholder storyboardName="MyAccount" id="zBv-mp-eSh" sceneMemberID="viewController"/>
-            </objects>
-            <point key="canvasLocation" x="-1743" y="-603"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="FVI-Og-NRt">
@@ -474,7 +466,7 @@
                                                     <rect key="frame" x="302" y="16" width="40" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-Bq-xhc">
-                                                            <rect key="frame" x="-5" y="3" width="50" height="17"/>
+                                                            <rect key="frame" x="-5" y="4" width="50" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="Fu0-gM-G1M"/>
                                                                 <constraint firstAttribute="width" constant="50" id="G49-r4-sGa"/>
@@ -531,7 +523,7 @@
                                                     <rect key="frame" x="302" y="16" width="40" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-st-Ra9">
-                                                            <rect key="frame" x="-5" y="3" width="50" height="17"/>
+                                                            <rect key="frame" x="-5" y="4" width="50" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="SIF-Pt-bW2"/>
                                                                 <constraint firstAttribute="height" constant="17" id="w6i-yN-ITk"/>
@@ -589,9 +581,6 @@
                                                 <constraint firstItem="DBO-zk-Cdg" firstAttribute="centerY" secondItem="Dn3-1K-Cmb" secondAttribute="centerY" id="On2-BV-M5d"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="zBv-mp-eSh" kind="custom" identifier="segueAccount" customClass="SWRevealViewControllerSeguePushController" id="swX-JT-VYD"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="56" id="lOk-40-Bxi">
                                         <rect key="frame" x="0.0" y="589" width="414" height="56"/>

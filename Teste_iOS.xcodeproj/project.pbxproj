@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E20E0411E9075A5006B4F51 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E20E03F1E9075A5006B4F51 /* MyAccount.storyboard */; };
-		6E20E0441E9086C3006B4F51 /* HTMMyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E0431E9086C3006B4F51 /* HTMMyAccountController.swift */; };
 		6E20E04D1E90AFC0006B4F51 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E04C1E90AFC0006B4F51 /* UIView.swift */; };
 		6E20E04F1E911B97006B4F51 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E04E1E911B97006B4F51 /* String+Utils.swift */; };
 		6E20E0511E911C46006B4F51 /* InitialsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E0501E911C46006B4F51 /* InitialsImageView.swift */; };
@@ -16,8 +14,6 @@
 		6E20E0561E9154D6006B4F51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E20E0581E9154D6006B4F51 /* Localizable.strings */; };
 		6E20E05D1E9175B0006B4F51 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E05C1E9175B0006B4F51 /* UIViewController+Utils.swift */; };
 		6E20E05F1E9178D3006B4F51 /* HTMFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E05E1E9178D3006B4F51 /* HTMFriend.swift */; };
-		6E20E0661E91C4B7006B4F51 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E20E0641E91C4B7006B4F51 /* Login.storyboard */; };
-		6E20E0691E91C55A006B4F51 /* HTMLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E20E0681E91C55A006B4F51 /* HTMLoginController.swift */; };
 		6E39276E1E8E03D900A6407E /* HTMPostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E39276D1E8E03D900A6407E /* HTMPostsService.swift */; };
 		6E3927711E8E09EE00A6407E /* HTMCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3927701E8E09EE00A6407E /* HTMCustomImageView.swift */; };
 		6E3927761E8F22BF00A6407E /* FormatterValueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3927751E8F22BF00A6407E /* FormatterValueExtension.swift */; };
@@ -35,6 +31,7 @@
 		7F80915426FA4ACCEB055BEB /* Pods_Teste_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A681A82B9A0CC4B4C6AA4A /* Pods_Teste_iOS.framework */; };
 		940DEFAC1E8D6882001A1E43 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940DEFAB1E8D6882001A1E43 /* SWRevealViewController.m */; };
 		940DEFAF1E8D6B07001A1E43 /* HTMMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DEFAE1E8D6B06001A1E43 /* HTMMenuController.swift */; };
+		9426362A1E927DBC00D3F2F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AAAE1E8BFE150038EAEB /* GoogleService-Info.plist */; };
 		949782B11E8D8C9C00611DA2 /* GenericMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949782B01E8D8C9C00611DA2 /* GenericMenuViewController.swift */; };
 		94A9AA971E8BC09C0038EAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AA961E8BC09C0038EAEB /* Assets.xcassets */; };
 		94A9AAA21E8BC8D10038EAEB /* HTMPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAA01E8BC8D10038EAEB /* HTMPostCell.swift */; };
@@ -42,17 +39,12 @@
 		94A9AAA51E8BC8F20038EAEB /* HTMPostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAA41E8BC8F20038EAEB /* HTMPostsController.swift */; };
 		94A9AAA81E8BE4CF0038EAEB /* HTMDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAA71E8BE4CF0038EAEB /* HTMDashboardController.swift */; };
 		94A9AAAC1E8BE5DB0038EAEB /* HTMRecentPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAAA1E8BE5DB0038EAEB /* HTMRecentPostsCell.swift */; };
-		94A9AAAF1E8BFE150038EAEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AAAE1E8BFE150038EAEB /* GoogleService-Info.plist */; };
 		94A9AAB11E8C02A70038EAEB /* HTMSale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAB01E8C02A70038EAEB /* HTMSale.swift */; };
 		94A9AAB31E8C03310038EAEB /* HTMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAB21E8C03310038EAEB /* HTMUser.swift */; };
-		94A9AAB51E8C03810038EAEB /* HTMPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAB41E8C03810038EAEB /* HTMPost.swift */; };
-		94A9AAB71E8C03D40038EAEB /* HTMProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAB61E8C03D40038EAEB /* HTMProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FDF3BC82ABD568A39F64E11 /* Pods-Teste_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teste_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teste_iOS/Pods-Teste_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		6E20E0401E9075A5006B4F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyAccount.storyboard; sourceTree = "<group>"; };
-		6E20E0431E9086C3006B4F51 /* HTMMyAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMMyAccountController.swift; sourceTree = "<group>"; };
 		6E20E0491E909A31006B4F51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E20E04C1E90AFC0006B4F51 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6E20E04E1E911B97006B4F51 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
@@ -62,10 +54,6 @@
 		6E20E0591E9154DE006B4F51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6E20E05C1E9175B0006B4F51 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		6E20E05E1E9178D3006B4F51 /* HTMFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMFriend.swift; sourceTree = "<group>"; };
-		6E20E0611E91BD5D006B4F51 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/MyAccount.strings"; sourceTree = "<group>"; };
-		6E20E0631E91BD60006B4F51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyAccount.strings; sourceTree = "<group>"; };
-		6E20E0651E91C4B7006B4F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		6E20E0681E91C55A006B4F51 /* HTMLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLoginController.swift; sourceTree = "<group>"; };
 		6E39276D1E8E03D900A6407E /* HTMPostsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMPostsService.swift; sourceTree = "<group>"; };
 		6E3927701E8E09EE00A6407E /* HTMCustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMCustomImageView.swift; sourceTree = "<group>"; };
 		6E3927751E8F22BF00A6407E /* FormatterValueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatterValueExtension.swift; sourceTree = "<group>"; };
@@ -100,8 +88,6 @@
 		94A9AAAE1E8BFE150038EAEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94A9AAB01E8C02A70038EAEB /* HTMSale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMSale.swift; sourceTree = "<group>"; };
 		94A9AAB21E8C03310038EAEB /* HTMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMUser.swift; sourceTree = "<group>"; };
-		94A9AAB41E8C03810038EAEB /* HTMPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMPost.swift; sourceTree = "<group>"; };
-		94A9AAB61E8C03D40038EAEB /* HTMProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMProduct.swift; sourceTree = "<group>"; };
 		D1A681A82B9A0CC4B4C6AA4A /* Pods_Teste_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teste_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB6A840071760B0A76D5875 /* Pods-Teste_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teste_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teste_iOS/Pods-Teste_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,35 +113,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6E20E0421E90867B006B4F51 /* MyAccount */ = {
-			isa = PBXGroup;
-			children = (
-				6E20E0431E9086C3006B4F51 /* HTMMyAccountController.swift */,
-			);
-			path = MyAccount;
-			sourceTree = "<group>";
-		};
 		6E20E04B1E90AF94006B4F51 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				6E20E04C1E90AFC0006B4F51 /* UIView.swift */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		6E20E0671E91C541006B4F51 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				6E20E0681E91C55A006B4F51 /* HTMLoginController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		6E304F571E8DF19900628F6E /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		6E39276F1E8E09CC00A6407E /* UIImageView */ = {
@@ -237,8 +200,6 @@
 			children = (
 				6EF4B9581E8B212A004ECA58 /* LaunchScreen.storyboard */,
 				6EF4B95A1E8B212A004ECA58 /* Main.storyboard */,
-				6E20E03F1E9075A5006B4F51 /* MyAccount.storyboard */,
-				6E20E0641E91C4B7006B4F51 /* Login.storyboard */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -246,13 +207,11 @@
 		6EF4B95C1E8B212A004ECA58 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6E304F571E8DF19900628F6E /* CoreData */,
 				6EF4B95D1E8B212A004ECA58 /* Categorias */,
 				6EF4B95E1E8B212A004ECA58 /* Components */,
 				6EF4B95F1E8B212A004ECA58 /* Controllers */,
 				6EF4B9601E8B212A004ECA58 /* Helpers */,
 				6EF4B9611E8B212A004ECA58 /* Models */,
-				6EF4B9621E8B212A004ECA58 /* Networks */,
 				6EF4B9631E8B212A004ECA58 /* Services */,
 			);
 			path = Sources;
@@ -283,8 +242,6 @@
 		6EF4B95F1E8B212A004ECA58 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6E20E0671E91C541006B4F51 /* Login */,
-				6E20E0421E90867B006B4F51 /* MyAccount */,
 				940DEFAD1E8D6ADB001A1E43 /* Menu */,
 				94A9AAA61E8BE4960038EAEB /* Dashboard */,
 				94A9AA9C1E8BC85B0038EAEB /* Posts */,
@@ -309,18 +266,9 @@
 			children = (
 				94A9AAB01E8C02A70038EAEB /* HTMSale.swift */,
 				94A9AAB21E8C03310038EAEB /* HTMUser.swift */,
-				94A9AAB41E8C03810038EAEB /* HTMPost.swift */,
-				94A9AAB61E8C03D40038EAEB /* HTMProduct.swift */,
 				6E20E05E1E9178D3006B4F51 /* HTMFriend.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		6EF4B9621E8B212A004ECA58 /* Networks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networks;
 			sourceTree = "<group>";
 		};
 		6EF4B9631E8B212A004ECA58 /* Services */ = {
@@ -468,17 +416,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9426362A1E927DBC00D3F2F0 /* GoogleService-Info.plist in Resources */,
 				6EF4B9671E8B212A004ECA58 /* LaunchScreen.storyboard in Resources */,
 				6EF4B96E1E8B2595004ECA58 /* HTMSalesCell.xib in Resources */,
-				6E20E0411E9075A5006B4F51 /* MyAccount.storyboard in Resources */,
 				6EF4B97A1E8D0683004ECA58 /* sales.json in Resources */,
 				6E39277D1E8F5A6900A6407E /* HTMRecentPostsCell.xib in Resources */,
 				6E20E0561E9154D6006B4F51 /* Localizable.strings in Resources */,
 				94A9AA971E8BC09C0038EAEB /* Assets.xcassets in Resources */,
 				94A9AAA31E8BC8D10038EAEB /* HTMPostCell.xib in Resources */,
 				6EF4B9681E8B212A004ECA58 /* Main.storyboard in Resources */,
-				94A9AAAF1E8BFE150038EAEB /* GoogleService-Info.plist in Resources */,
-				6E20E0661E91C4B7006B4F51 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +458,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9F94DD60182A9CEEA63E261A /* [CP] Embed Pods Frameworks */ = {
@@ -537,9 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A9AAB51E8C03810038EAEB /* HTMPost.swift in Sources */,
 				6E3927711E8E09EE00A6407E /* HTMCustomImageView.swift in Sources */,
-				94A9AAB71E8C03D40038EAEB /* HTMProduct.swift in Sources */,
 				6E20E05F1E9178D3006B4F51 /* HTMFriend.swift in Sources */,
 				6E3927781E8F22F100A6407E /* HTMTabBarController.swift in Sources */,
 				6E20E0531E912D7B006B4F51 /* HTMAccountService.swift in Sources */,
@@ -550,7 +494,6 @@
 				6E20E04D1E90AFC0006B4F51 /* UIView.swift in Sources */,
 				6E20E04F1E911B97006B4F51 /* String+Utils.swift in Sources */,
 				6E39276E1E8E03D900A6407E /* HTMPostsService.swift in Sources */,
-				6E20E0691E91C55A006B4F51 /* HTMLoginController.swift in Sources */,
 				94A9AAA21E8BC8D10038EAEB /* HTMPostCell.swift in Sources */,
 				6EF4B9711E8B3F0F004ECA58 /* HTMSalesController.swift in Sources */,
 				6E39277A1E8F230100A6407E /* HTMTabBar.swift in Sources */,
@@ -561,7 +504,6 @@
 				949782B11E8D8C9C00611DA2 /* GenericMenuViewController.swift in Sources */,
 				94A9AAA81E8BE4CF0038EAEB /* HTMDashboardController.swift in Sources */,
 				94A9AAAC1E8BE5DB0038EAEB /* HTMRecentPostsCell.swift in Sources */,
-				6E20E0441E9086C3006B4F51 /* HTMMyAccountController.swift in Sources */,
 				6EF4B9751E8C49A0004ECA58 /* HTMSalesService.swift in Sources */,
 				6E20E05D1E9175B0006B4F51 /* UIViewController+Utils.swift in Sources */,
 				6EF4B9651E8B212A004ECA58 /* AppDelegate.swift in Sources */,
@@ -571,16 +513,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6E20E03F1E9075A5006B4F51 /* MyAccount.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E20E0401E9075A5006B4F51 /* Base */,
-				6E20E0611E91BD5D006B4F51 /* pt-BR */,
-				6E20E0631E91BD60006B4F51 /* en */,
-			);
-			name = MyAccount.storyboard;
-			sourceTree = "<group>";
-		};
 		6E20E0581E9154D6006B4F51 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -588,14 +520,6 @@
 				6E20E0591E9154DE006B4F51 /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		6E20E0641E91C4B7006B4F51 /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E20E0651E91C4B7006B4F51 /* Base */,
-			);
-			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		6E39277F1E8F5A6900A6407E /* HTMRecentPostsCell.xib */ = {

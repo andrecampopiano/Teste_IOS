@@ -30,14 +30,21 @@ class HTMAccountService: NSObject {
             }
             guard let userId = FIRAuth.auth()?.currentUser?.uid else { return }
             let dicitionaryValues = ["email":email, "userName":username, "password":password ,"urlProfileImage":urlProfileImage]
-            let user = HTMUser()
-            user.setValuesForKeys(dicitionaryValues)
-            FIRDatabase.database().reference().child("users").child(userId).updateChildValues(dicitionaryValues, withCompletionBlock: { (error, reference) in
+            let values = [userId:dicitionaryValues]
+            FIRDatabase.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (error, reference) in
                 if let err = error {
                     print(err.localizedDescription)
                     return completion(nil,err as NSError)
                 }
-                
+                let user = HTMUser()
+                user.userName = username
+                user.email = email
+                user.password = password
+                user.urlProfileImage = urlProfileImage
+               
+                UserDefaults.standard.set(user, forKey: "user")
+                let result = UserDefaults.standard.value(forKey: "user")
+                print(result!)
                 completion(user,nil)
             })
         }
@@ -62,7 +69,7 @@ class HTMAccountService: NSObject {
         guard let userID = FIRAuth.auth()?.currentUser?.uid else { return }
         FIRDatabase.database().reference().child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
             let user = HTMUser()
-            user.setValuesForKeys(snapshot.value as! [String:AnyObject])
+            user.setValuesForKeys(snapshot.value as! [String: Any])
             completion(user)
         }) { (error) in
             print(error.localizedDescription)

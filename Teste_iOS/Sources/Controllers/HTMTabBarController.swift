@@ -14,13 +14,6 @@ class HTMTabBarController: UITabBarController {
     let segueDashboard = "segueDashboard"
     override func viewDidLoad() {
         super.viewDidLoad()
-        /* do {
-         try FIRAuth.auth()?.signOut()
-         }catch let err as NSError{
-         self.alertMessage(errCodeDescription: err.description)
-         }
-         
-         */
         setupTabBarSeparators()
     }
     
