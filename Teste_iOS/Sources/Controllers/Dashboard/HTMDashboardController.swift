@@ -14,29 +14,31 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblSalesValue: UILabel!
     
-    private var listSale = Array<HTMSale>()
-    private var listUsers = Array<HTMUser>()
+    var user = HTMUser()
+    private var listSale = [HTMSale]()
+    private var listFriends = [HTMFriend]()
     
     private let cellIdentifieldRecentPosts = "cellRecentPosts"
     let cellIdentifieldSale = "cellSales"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         setContent()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "HTMRecentPostsCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldRecentPosts)
         self.tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
-        
     }
     
     func setContent(){
         self.activityIndicator.startAnimating()
         UIApplication.shared.beginIgnoringInteractionEvents()
-        HTMSalesService.sharedInstance.recoveryUsersAndSales { (sales:[HTMSale],users:[HTMUser],saldo:Double) in
+        HTMSalesService.sharedInstance.recoveryFriendsAndSales { (sales:[HTMSale],friends:[HTMFriend],saldo:Double) in
             self.lblSalesValue.text = saldo.currencyBR
             self.listSale = sales
-            self.listUsers = users
+            self.listFriends = friends
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.activityIndicator.stopAnimating()
@@ -51,16 +53,15 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return section == 1 ? self.listSale.count : 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         if indexPath.section == 0 {
-            if self.listUsers.count > 0 {
+            if self.listFriends.count > 0 {
                 let cellRecentPosts = tableView.dequeueReusableCell(withIdentifier: cellIdentifieldRecentPosts, for: indexPath) as! HTMRecentPostsCell
-                cellRecentPosts.listUsers = self.listUsers
+                cellRecentPosts.listFriends = self.listFriends
                 cell = cellRecentPosts
             }
         }else { if listSale.count != 0 { cell = setCellSale(indexPath: indexPath) } }

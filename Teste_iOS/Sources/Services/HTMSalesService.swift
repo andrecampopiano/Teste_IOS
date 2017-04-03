@@ -31,10 +31,10 @@ class HTMSalesService: NSObject {
         })
     }
     
-    func recoveryUsersAndSales(completion: @escaping ([HTMSale], [HTMUser], Double)->()){
+    func recoveryFriendsAndSales(completion: @escaping ([HTMSale], [HTMFriend], Double)->()){
         self.recoveryListSales { (listSale, saldo) in
-            HTMPostsService.sharedInstance.recoveryPostsUsers(completion: { (listUser) in
-                completion(listSale,listUser,saldo)
+            HTMPostsService.sharedInstance.recoveryPostsFriends(completion: { (listFriends) in
+                completion(listSale,listFriends,saldo)
             })
         }
     }

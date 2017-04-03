@@ -13,7 +13,7 @@ import UIKit
 class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var lblNumberPosts: UILabel!
-    var listUsers = [HTMUser]()
+    var listFriends = [HTMFriend]()
     private let cellPosts = "cellPosts"
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -31,9 +31,8 @@ class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource,
     }
     
     func setContent(){
-        HTMPostsService.sharedInstance.recoveryPostsUsers { (users:[HTMUser]) in
-            self.listUsers = users
-            
+        HTMPostsService.sharedInstance.recoveryPostsFriends { (friends:[HTMFriend]) in
+            self.listFriends = friends
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.activityIndicator.stopAnimating()
@@ -69,13 +68,13 @@ class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return self.listUsers.count
+        return self.listFriends.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellPosts, for: indexPath) as! HTMPostCell
-        if listUsers.count != 0 {
-            let user = self.listUsers[indexPath.row]
+        if listFriends.count != 0 {
+            let user = self.listFriends[indexPath.row]
             if let imageUrl = user.urlProfileImage{
                 if imageUrl != "" {
                     cell.imageUser.loadImageUsingUrlString(imageUrl)

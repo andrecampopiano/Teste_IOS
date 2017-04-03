@@ -10,7 +10,9 @@ import UIKit
 
 class HTMUser: NSObject {
 
-    var name:String!
-    var urlProfileImage:String!
+    var userName:String?
+    var urlProfileImage:String?
+    var email:String?
+    var password:String?
     
 }

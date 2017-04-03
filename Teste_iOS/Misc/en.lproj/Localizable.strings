@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Teste_iOS
+
+  Created by André Campopiano on 02/04/17.
+  Copyright © 2017 André Campopiano. All rights reserved.
+*/
+
+// AlertController
+
+"title_attention" = "Attention";
+
+"msg_error_register_user" = "Error registering user";
+
+//Firebase Error
+"17008" = "The email address is badly formatted";
+"17026" = "The password must be 6 characters long or more.";
+"17006" = "The specified login method is disabled";
+"17007" = "The email address is already in use by another account.";

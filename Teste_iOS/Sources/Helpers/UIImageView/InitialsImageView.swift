@@ -87,7 +87,7 @@ extension UIImageView {
 private func initialsFromString(string: String) -> String {
     
     var displayString: String = ""
-    var words: [String] = string.components(separatedBy: .whitespacesAndNewlines)
+    let words: [String] = string.components(separatedBy: .whitespacesAndNewlines)
     
     // Get first letter of the first and last word
     if words.count > 0 {

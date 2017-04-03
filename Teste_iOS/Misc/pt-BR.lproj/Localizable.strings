@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Teste_iOS
+
+  Created by André Campopiano on 02/04/17.
+  Copyright © 2017 André Campopiano. All rights reserved.
+*/
+
+// AlertController
+
+"title_attention" = "Atenção";
+
+"msg_error_register_user" = "Erro ao registrar o usuário";
+
+
+
+//Firebase Error
+
+"17008" = "O endereço de e-mail está mal formatado";
+"17026" = "A senha deve ter 6 caracteres ou mais.";
+"17006" = "O metodo de login selecionado está desativado";
+"17007" = "O endereço de e-mail já está em uso por outra conta.";

@@ -10,7 +10,7 @@ import UIKit
 
 class HTMRecentPostsCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var listUsers = [HTMUser]()
+    var listFriends = [HTMFriend]()
     
     @IBOutlet weak var lblNumberMessages: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -26,7 +26,7 @@ class HTMRecentPostsCell: UITableViewCell, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listUsers.count
+        return self.listFriends.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,7 +35,7 @@ class HTMRecentPostsCell: UITableViewCell, UICollectionViewDelegate, UICollectio
     
     func setHtmPostCell(indexPath:IndexPath)->HTMPostCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellPosts, for: indexPath) as! HTMPostCell
-        let user = self.listUsers[indexPath.row]
+        let user = self.listFriends[indexPath.row]
         cell.lblUserName.text = user.name
         if user.urlProfileImage != "" {
             cell.imageUser.loadImageUsingUrlString(user.urlProfileImage)

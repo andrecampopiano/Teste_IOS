@@ -1,6 +1,6 @@
 //
-//  BackTableVC.swift
-//  SliderMenuEstudo
+//  HTMMenuController.swift
+//  Teste_iOS
 //
 //  Created by André Luís  Campopiano on 30/03/17.
 //  Copyright © 2017 André Luís  Campopiano. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MenuController : UITableViewController {
+class HTMMenuController : UITableViewController {
     
     @IBOutlet weak var imgBackgroudProfile: UIImageView!
     @IBOutlet weak var imageProfile: UIImageView!
@@ -17,6 +17,8 @@ class MenuController : UITableViewController {
     @IBOutlet weak var lblNumberAffiliates: UILabel!
     @IBOutlet weak var lblNumberMessages: UILabel!
     @IBOutlet weak var lblNumberNotifications: UILabel!
+    
+    var user = HTMUser()
     
     let segueDashboard = "segueDashboard"
     let segueVendas = "segueVendas"

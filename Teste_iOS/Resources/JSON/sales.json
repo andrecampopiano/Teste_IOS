@@ -2,130 +2,130 @@
     "sales" : {
         "10201370" : {
             "alert" : false,
-            "date_sale" : "2017-01-29",
+            "date_sale" : "29/01/2017",
             "descricao" : "Curso de Android",
             "id" : 10201370,
             "price" : 785.5
         },
         "16309927" : {
             "alert" : true,
-            "date_sale" : "2016-09-19",
+            "date_sale" : "19/09/2016",
             "descricao" : "Programação para iniciantes",
             "id" : 16309927,
             "price" : 148.0
         },
         "20501590" : {
             "alert" : true,
-            "date_sale" : "2016-02-09",
+            "date_sale" : "09/02/2016",
             "descricao" : "Curso de desenvolvedor iOS",
             "id" : 20501590,
             "price" : 1084.4
         },
         "22651257" : {
             "alert" : false,
-            "date_sale" : "2016-08-12",
+            "date_sale" : "12/08/2016",
             "descricao" : "Logica de programação",
             "id" : 22651257,
             "price" : 348.0
         },
         "26470649" : {
             "alert" : false,
-            "date_sale" : "2015-02-12",
+            "date_sale" : "12/02/2015",
             "descricao" : "Playstation 4",
             "id" : 26470649,
             "price" : 2136.0
         },
         "30105578" : {
             "alert" : false,
-            "date_sale" : "2016-11-20",
+            "date_sale" : "20/11/2016",
             "descricao" : "Aulas de guitarra",
             "id" : 30105578,
             "price" : 1820.1
         },
         "30201570" : {
             "alert" : true,
-            "date_sale" : "2017-02-19",
+            "date_sale" : "19/02/2017",
             "descricao" : "Como vender melhor e mais rapido",
             "id" : 30201570,
             "price" : 500.2
         },
         "53126021" : {
             "alert" : true,
-            "date_sale" : "2016-10-19",
+            "date_sale" : "19/10/2016",
             "descricao" : "Livro apredendo a cozinhar",
             "id" : 53126021,
             "price" : 767.9
         },
         "63181406" : {
             "alert" : false,
-            "date_sale" : "2016-02-10",
+            "date_sale" : "10/02/2016",
             "descricao" : "Xbox One",
             "id" : 63181406,
             "price" : 1660.0
         },
         "71664314" : {
             "alert" : false,
-            "date_sale" : "2016-02-05",
+            "date_sale" : "05/02/2016",
             "descricao" : "Placa de video Radeon R9 290x",
             "id" : 71664314,
             "price" : 1125.0
         },
         "72633459" : {
             "alert" : false,
-            "date_sale" : "2016-12-29",
+            "date_sale" : "29/12/2016",
             "descricao" : "Treinamento de liderança",
             "id" : 72633459,
             "price" : 1527.0
         },
         "74580901" : {
             "alert" : false,
-            "date_sale" : "2015-06-16",
+            "date_sale" : "16/06/2015",
             "descricao" : "Macbook Pro I7",
             "id" : 74580901,
             "price" : 5977.0
         },
         "75647466" : {
             "alert" : false,
-            "date_sale" : "2015-06-04",
+            "date_sale" : "04/06/2015",
             "descricao" : "Notebook Dell 2040",
             "id" : 75647466,
             "price" : 2285.0
         },
         "78751091" : {
             "alert" : true,
-            "date_sale" : "2015-01-19",
+            "date_sale" : "19/01/2015",
             "descricao" : "Certificado Java 7",
             "id" : 78751091,
             "price" : 2456.1
         },
         "90037677" : {
             "alert" : false,
-            "date_sale" : "2016-01-22",
+            "date_sale" : "22/01/2016",
             "descricao" : "Cozinhando em 5 minutos",
             "id" : 90037677,
             "price" : 267.0
         }
     },
-    "users" : {
+    "friends" : {
         "01" : {
             "name" : "André Luís Freitas",
-            "urlProfileImage" : "gs://testeios-7e95f.appspot.com/pictures/peao.jpg"
+            "urlProfileImage" : "https://firebasestorage.googleapis.com/v0/b/testeios-7e95f.appspot.com/o/pictures%2Fpeao.jpg?alt=media&token=167899ce-1e42-41f8-85e5-583027a57618"
         },
         "02" : {
             "name" : "Cleber Dias",
-            "urlProfileImage" : "gs://testeios-7e95f.appspot.com/pictures/cleber.jpg"
+            "urlProfileImage" : "https://firebasestorage.googleapis.com/v0/b/testeios-7e95f.appspot.com/o/pictures%2Fcleber.jpg?alt=media&token=ea3c9073-a292-4bd1-a283-b9bbf8207c37"
         },
         "03" : {
             "name" : "Ferando Vergis",
-            "urlProfileImage" : "gs://testeios-7e95f.appspot.com/pictures/cleber.jpg"
+            "urlProfileImage" : "https://firebasestorage.googleapis.com/v0/b/testeios-7e95f.appspot.com/o/pictures%2Ffernando.jpg?alt=media&token=cb76228d-2e55-4b27-b77e-ff7c9cf3466e"
         },
         "04" : {
             "name" : "Matheus Leite",
-            "urlProfileImage" : "gs://testeios-7e95f.appspot.com/pictures/matheus.jpg"
+            "urlProfileImage" : "https://firebasestorage.googleapis.com/v0/b/testeios-7e95f.appspot.com/o/pictures%2Fmatheus.jpg?alt=media&token=186d3390-f5df-473a-8853-74960517f09e"
         },
         "05" : {
             "name" : "André Bacaglini",
-            "urlProfileImage" : "gs://testeios-7e95f.appspot.com/pictures/baca.jpg"
+            "urlProfileImage" : "https://firebasestorage.googleapis.com/v0/b/testeios-7e95f.appspot.com/o/pictures%2Fbaca.jpg?alt=media&token=79b18edb-1838-4dec-a3e5-2d65313f2ff4"
         },
         "06" : {
             "name" : "Ana Paula Correia",

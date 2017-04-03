@@ -7,15 +7,23 @@
 //
 
 import UIKit
-
+import Firebase
 class HTMTabBarController: UITabBarController {
-
+    
+    var user = HTMUser()
+    let segueDashboard = "segueDashboard"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        /* do {
+         try FIRAuth.auth()?.signOut()
+         }catch let err as NSError{
+         self.alertMessage(errCodeDescription: err.description)
+         }
+         
+         */
         setupTabBarSeparators()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

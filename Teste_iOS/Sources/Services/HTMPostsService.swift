@@ -11,17 +11,17 @@ import Firebase
 
 class HTMPostsService: NSObject {
     static let sharedInstance = HTMPostsService()
-    func recoveryPostsUsers(completion: @escaping ([HTMUser])->()){
-        var listUsers = [HTMUser]()
-        FIRDatabase.database().reference().child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+    func recoveryPostsFriends(completion: @escaping ([HTMFriend])->()){
+        var listFriends = [HTMFriend]()
+        FIRDatabase.database().reference().child("friends").observeSingleEvent(of: .value, with: { (snapshot) in
             let dic = snapshot.value as? [String : AnyObject]
             for item in dic! {
-                let user = HTMUser()
-                user.setValuesForKeys(item.value as! [String : AnyObject])
-                listUsers.append(user)
+                let friend = HTMFriend()
+                friend.setValuesForKeys(item.value as! [String : AnyObject])
+                listFriends.append(friend)
             }
-            listUsers.sort { $0.name < $1.name }
-            completion(listUsers)
+            listFriends.sort { $0.name < $1.name }
+            completion(listFriends)
         })
     }
 }

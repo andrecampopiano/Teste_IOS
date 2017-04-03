@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Confirmar senha:"; ObjectID = "AWy-6Q-nNG"; */
+"AWy-6Q-nNG.placeholder" = "Confirmar senha:";
+
+/* Class = "UITextField"; placeholder = "Senha:"; ObjectID = "emq-hD-qf3"; */
+"emq-hD-qf3.placeholder" = "Senha:";
+
+/* Class = "UITextField"; placeholder = "E-mail:"; ObjectID = "gcf-Wq-M4J"; */
+"gcf-Wq-M4J.placeholder" = "E-mail:";
+
+/* Class = "UITextField"; placeholder = "Nome:"; ObjectID = "yfy-sA-BKj"; */
+"yfy-sA-BKj.placeholder" = "Nome:";

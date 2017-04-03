@@ -1,15 +1,16 @@
 //
-//  HTMMyAccountController.swift
+//  HTMLoginController.swift
 //  Teste_iOS
 //
-//  Created by André Campopiano on 01/04/17.
+//  Created by André Campopiano on 02/04/17.
 //  Copyright © 2017 André Campopiano. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
-class HTMMyAccountController: GenericMenuViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+class HTMLoginController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     @IBOutlet weak var btnChangeImgProfile: UIButton!
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var txtName: UITextField!
@@ -17,11 +18,22 @@ class HTMMyAccountController: GenericMenuViewController,UIImagePickerControllerD
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
     
+    let segueMain = "segueMain"
+    let accountService = HTMAccountService.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        FIRAuth.auth()?.addStateDidChangeListener { auth, user in
+            if user != nil {
+                self.accountService.recoverUser(completion: { (us) in
+                    self.performSegue(withIdentifier:self.segueMain, sender: us)
+                })
+            }
+        }
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
+    
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -47,30 +59,25 @@ class HTMMyAccountController: GenericMenuViewController,UIImagePickerControllerD
         guard let name = txtName.text?.trim(), name.characters.count > 0 else { return }
         guard let password = txtPassword.text?.trim(), password.characters.count > 0 , txtPassword.text! == txtConfirmPassword.text!  else { return }
         guard let image = imgProfile.image else { return }
-
-        let accountService = HTMAccountService.sharedInstance
         accountService.registerFirabaseWithEmail(email: email, password: password) { (error) in
             if  let err = error{
                 return self.alertMessage(errCodeDescription: err.code.description)
             }
-            accountService.updateAccount(username: name, email: email, password: password, imgProfile: image, completion: { (user,error) in
+            self.accountService.updateAccount(username: name, email: email, password: password, imgProfile: image, completion: { (user,error) in
                 if let err = error {
                     return self.alertMessage(errCodeDescription: err.code.description)
                 }
-                
+                self.performSegue(withIdentifier: self.segueMain, sender: user)
             })
         }
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueMain {
+            let revealController = segue.destination as! SWRevealViewController
+            revealController.loadView()
+            let tabBarControlller = revealController.frontViewController as! HTMTabBarController
+            tabBarControlller.user = sender as! HTMUser
+        }
+    }
 }
