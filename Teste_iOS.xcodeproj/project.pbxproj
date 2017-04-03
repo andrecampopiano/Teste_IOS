@@ -32,6 +32,7 @@
 		940DEFAC1E8D6882001A1E43 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940DEFAB1E8D6882001A1E43 /* SWRevealViewController.m */; };
 		940DEFAF1E8D6B07001A1E43 /* HTMMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DEFAE1E8D6B06001A1E43 /* HTMMenuController.swift */; };
 		9426362A1E927DBC00D3F2F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AAAE1E8BFE150038EAEB /* GoogleService-Info.plist */; };
+		9426363A1E92A0AE00D3F2F0 /* HTMFormMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942636391E92A0AE00D3F2F0 /* HTMFormMenuController.swift */; };
 		949782B11E8D8C9C00611DA2 /* GenericMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949782B01E8D8C9C00611DA2 /* GenericMenuViewController.swift */; };
 		94A9AA971E8BC09C0038EAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A9AA961E8BC09C0038EAEB /* Assets.xcassets */; };
 		94A9AAA21E8BC8D10038EAEB /* HTMPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9AAA01E8BC8D10038EAEB /* HTMPostCell.swift */; };
@@ -78,6 +79,7 @@
 		940DEFAA1E8D6882001A1E43 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		940DEFAB1E8D6882001A1E43 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		940DEFAE1E8D6B06001A1E43 /* HTMMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMMenuController.swift; sourceTree = "<group>"; };
+		942636391E92A0AE00D3F2F0 /* HTMFormMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMFormMenuController.swift; sourceTree = "<group>"; };
 		949782B01E8D8C9C00611DA2 /* GenericMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericMenuViewController.swift; sourceTree = "<group>"; };
 		94A9AA961E8BC09C0038EAEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A9AAA01E8BC8D10038EAEB /* HTMPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMPostCell.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				940DEFAE1E8D6B06001A1E43 /* HTMMenuController.swift */,
+				942636391E92A0AE00D3F2F0 /* HTMFormMenuController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				940DEFAF1E8D6B07001A1E43 /* HTMMenuController.swift in Sources */,
 				949782B11E8D8C9C00611DA2 /* GenericMenuViewController.swift in Sources */,
 				94A9AAA81E8BE4CF0038EAEB /* HTMDashboardController.swift in Sources */,
+				9426363A1E92A0AE00D3F2F0 /* HTMFormMenuController.swift in Sources */,
 				94A9AAAC1E8BE5DB0038EAEB /* HTMRecentPostsCell.swift in Sources */,
 				6EF4B9751E8C49A0004ECA58 /* HTMSalesService.swift in Sources */,
 				6E20E05D1E9175B0006B4F51 /* UIViewController+Utils.swift in Sources */,

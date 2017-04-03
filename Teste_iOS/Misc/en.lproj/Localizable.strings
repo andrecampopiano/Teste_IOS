@@ -7,11 +7,17 @@
 */
 
 // AlertController
-
 "title_attention" = "Attention";
-
 "msg_error_register_user" = "Error registering user";
-
+//ItensMenu
+"title_post" = "Posts";
+"title_sales" = "My Sales";
+"title_account" = "My Account";
+"title_about_app" = "About App";
+"title_dashboard" = "Dashboard";
+"title_notifications" = "Notifications";
+"title_affiliates" = "Affiliates";
+"title_products" = "My Products";
 //Firebase Error
 "17008" = "The email address is badly formatted";
 "17026" = "The password must be 6 characters long or more.";

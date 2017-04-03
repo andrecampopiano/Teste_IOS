@@ -7,15 +7,18 @@
 */
 
 // AlertController
-
 "title_attention" = "Atenção";
-
 "msg_error_register_user" = "Erro ao registrar o usuário";
-
-
-
+//ItensMenu
+"title_post" = "Mensagens";
+"title_sales" = "Minhas Vendas";
+"title_account" = "Minha conta";
+"title_about_app" = "Sobre o App";
+"title_dashboard" = "Dashboard";
+"title_notifications" = "Notificações";
+"title_affiliates" = "Afiliados";
+"title_products" = "Meus Produtos";
 //Firebase Error
-
 "17008" = "O endereço de e-mail está mal formatado";
 "17026" = "A senha deve ter 6 caracteres ou mais.";
 "17006" = "O metodo de login selecionado está desativado";
