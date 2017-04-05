@@ -18,6 +18,7 @@
 "title_notifications" = "Notifications";
 "title_affiliates" = "Affiliates";
 "title_products" = "My Products";
+"title_lost_connect" = "Lost Connect";
 //Firebase Error
 "17008" = "The email address is badly formatted";
 "17026" = "The password must be 6 characters long or more.";

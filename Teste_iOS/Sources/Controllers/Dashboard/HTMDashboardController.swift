@@ -23,31 +23,38 @@ class HTMDashboardController: GenericMenuViewController, UITableViewDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataBind()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
-        setContent()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "HTMRecentPostsCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldRecentPosts)
         self.tableView.register(UINib(nibName: "HTMSalesCell", bundle: nil), forCellReuseIdentifier: cellIdentifieldSale)
     }
     
-    func setContent(){
+    func dataBind(){
         self.activityIndicator.startAnimating()
         UIApplication.shared.beginIgnoringInteractionEvents()
-        HTMSalesService.sharedInstance.recoveryFriendsAndSales { (sales:[HTMSale],friends:[HTMFriend],saldo:Double) in
-            self.lblSalesValue.text = saldo.currencyBR
-            self.listSale = sales
-            self.listFriends = friends
+        HTMFirebaseConnect.sharedInstance.checkFirebaseConnect { (isConnect:Bool) in
+            if isConnect {
+                HTMSalesService.sharedInstance.recoveryFriendsAndSales { (sales:[HTMSale],friends:[HTMFriend],saldo:Double) in
+                    self.lblSalesValue.text = saldo.currencyBR
+                    self.listSale = sales
+                    self.listFriends = friends
+                    self.tableView.reloadData()
+                }
+                
+            }else {
+                self.alertMessage(errCodeDescription:"title_lost_connect")
+            }
             DispatchQueue.main.async {
-                self.tableView.reloadData()
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
                 UIApplication.shared.endIgnoringInteractionEvents()
             }
         }
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }

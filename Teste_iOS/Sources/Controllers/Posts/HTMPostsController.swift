@@ -23,43 +23,37 @@ class HTMPostsController: GenericMenuViewController, UICollectionViewDataSource,
         self.lblNumberPosts.text = "+20"
         self.automaticallyAdjustsScrollViewInsets = false
         self.collectionView.register(UINib(nibName: "HTMPostCell", bundle: nil), forCellWithReuseIdentifier: cellPosts)
-        
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        setContent()
+        dataBind()
     }
     
-    func setContent(){
-        HTMPostsService.sharedInstance.recoveryPostsFriends { (friends:[HTMFriend]) in
-            self.listFriends = friends
+    func dataBind(){
+        HTMFirebaseConnect.sharedInstance.checkFirebaseConnect { (isConnect:Bool) in
+            if isConnect {
+                HTMPostsService.sharedInstance.recoveryPostsFriends { (friends:[HTMFriend]?) in
+                    if let friends = friends {
+                        self.listFriends = friends
+                        self.collectionView.reloadData()
+                    }
+                }
+            }else {
+                self.alertMessage(errCodeDescription:"title_lost_connect")
+            }
             DispatchQueue.main.async {
-                self.collectionView.reloadData()
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
                 UIApplication.shared.endIgnoringInteractionEvents()
             }
         }
-        
-       
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     // MARK: UICollectionViewDataSource
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

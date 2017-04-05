@@ -18,8 +18,11 @@
 "title_notifications" = "Notificações";
 "title_affiliates" = "Afiliados";
 "title_products" = "Meus Produtos";
+"title_lost_connect" = "Sem Conexão";
+
 //Firebase Error
 "17008" = "O endereço de e-mail está mal formatado";
 "17026" = "A senha deve ter 6 caracteres ou mais.";
 "17006" = "O metodo de login selecionado está desativado";
 "17007" = "O endereço de e-mail já está em uso por outra conta.";
+
